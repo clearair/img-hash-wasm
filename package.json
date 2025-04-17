@@ -1,5 +1,5 @@
 {
-  "name": "img-hash-wasm",
+  "name": "img-compare-wasm",
   "version": "0.1.0",
   "description": "A WebAssembly image comparison tool using perceptual hash (from Rust img hash)",
   "main": "image-compare.js",
