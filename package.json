@@ -1,0 +1,34 @@
+{
+  "name": "img-hash-wasm",
+  "version": "0.1.0",
+  "description": "A WebAssembly image comparison tool using perceptual hash (from Rust img hash)",
+  "main": "image-compare.js",
+  "module": "image-compare.js",
+  "exports": {
+    ".": {
+      "import": "./image-compare.js"
+    }
+  },
+  "files": [
+    "pkg/",
+    "wasm-wrapper.js"
+  ],
+  "type": "module",
+  "keywords": [
+    "wasm",
+    "image-compare",
+    "rust",
+    "hash",
+    "webassembly"
+  ],
+  "author": "Azhi",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/clearair/img-hash-wasm"
+  },
+  "bugs": {
+    "url": "https://github.com/clearair/img-hash-wasm/issues"
+  },
+  "homepage": "https://github.com/clearair/img-hash-wasm#readme"
+}

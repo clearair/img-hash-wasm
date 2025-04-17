@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title></title>
+</head>
+<body>
+  <input type="file" id="file1" accept="image/*">
+  <input type="file" id="file2" accept="image/*">
+  <button id="compare-btn">diff image</button>
+  <div id="result"></div>
+
+  <script type="module">
+    import { init, bindImageCompare } from './image-compare.js';
+  
+    await init();
+  
+    bindImageCompare({
+      file1Input: document.getElementById('file1'),
+      file2Input: document.getElementById('file2'),
+      button: document.getElementById('compare-btn'),
+      onResult: (diff) => {
+        const resultDiv = document.getElementById('result');
+        if (diff === null) {
+          resultDiv.textContent = 'diff error';
+        } else {
+          resultDiv.textContent = `Difference score: ${diff.toFixed(6)}`;
+        }
+      }
+    });
+  </script>  
+</body>
+</html>

@@ -1,0 +1,16 @@
+[package]
+name = "img-hash-wasm"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+wasm-bindgen = "0.2.100"
+console_error_panic_hook = "0.1"
+img_hash = "3.2.0"
+web-sys = { version = "0.3.77", features = ["console"] }
+
+[dev-dependencies]
+wasm-bindgen-test = "0.3"
+
+[lib]
+crate-type = ["cdylib", "rlib"] # 确保包含 rlib 以便进行 native 测试
