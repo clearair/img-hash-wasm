@@ -10,7 +10,7 @@
     }
   },
   "files": [
-    "pkg/",
+    "pkg",
     "wasm-wrapper.js"
   ],
   "type": "module",
@@ -25,7 +25,7 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/clearair/img-hash-wasm"
+    "url": "git+https://github.com/clearair/img-hash-wasm.git"
   },
   "bugs": {
     "url": "https://github.com/clearair/img-hash-wasm/issues"
